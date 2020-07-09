@@ -1,4 +1,6 @@
-package com.nix.homework;
+package com.nix.homework.retry;
+
+import com.nix.homework.block.Block;
 
 public class RetryImpl implements Retry<Block> {
 	

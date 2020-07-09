@@ -1,5 +1,10 @@
 package com.nix.homework;
 
+import com.nix.homework.block.Block;
+import com.nix.homework.block.BlockImpl;
+import com.nix.homework.retry.Retry;
+import com.nix.homework.retry.RetryImpl;
+
 public class Main {
 	private static final Retry<Block> retry = new RetryImpl();
 	

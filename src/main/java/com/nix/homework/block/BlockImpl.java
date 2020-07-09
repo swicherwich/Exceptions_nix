@@ -1,4 +1,4 @@
-package com.nix.homework;
+package com.nix.homework.block;
 
 import java.util.Random;
 
