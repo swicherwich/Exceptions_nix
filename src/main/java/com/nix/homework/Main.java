@@ -8,6 +8,8 @@ import com.nix.homework.retry.RetryImpl;
 public class Main {
 	private static final Retry<Block> retry = new RetryImpl();
 	
+	private static final int ITERATIONS = 5;
+	
 	/*
 	 * Might work at the first time multiply times
 	 * Keep rerunning main in order to catch more iterations result
@@ -16,7 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 		Block block = new BlockImpl();
 		try {
-			retry.retry(block, 10);
+			retry.retry(block, ITERATIONS);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
